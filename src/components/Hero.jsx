@@ -7,9 +7,10 @@ import { styles } from "../styles";
 const useTypewriter = (text, speed = 50, delay = 0) => {
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (currentIndex < text.length) {
+    if (currentIndex < text.length && isVisible) {
       const timeout = setTimeout(() => {
         setDisplayedText(text.slice(0, currentIndex + 1));
         setCurrentIndex(prev => prev + 1);
@@ -17,10 +18,11 @@ const useTypewriter = (text, speed = 50, delay = 0) => {
       
       return () => clearTimeout(timeout);
     }
-  }, [currentIndex, text, speed]);
+  }, [currentIndex, text, speed, isVisible]);
 
   useEffect(() => {
     const initialDelay = setTimeout(() => {
+      setIsVisible(true);
       setCurrentIndex(0);
       setDisplayedText("");
     }, delay);
@@ -28,7 +30,7 @@ const useTypewriter = (text, speed = 50, delay = 0) => {
     return () => clearTimeout(initialDelay);
   }, [delay]);
 
-  return displayedText;
+  return isVisible ? displayedText : "";
 };
 
 const Hero = () => {
@@ -73,7 +75,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             <span className="typewriter-text">{useTypewriter("Hey there! I'm", 50)}</span>
             <br />
-            <span className='text-[#915EFF] typewriter-text'>{useTypewriter("Dhruv Tripathi", 60, 800)}</span>
+            <span className='text-[#915EFF] typewriter-text'>{useTypewriter("Dhruv Tripathi", 60, 2000)}</span>
           </h1>
           <div className={`${styles.heroSubText} mt-2 text-white-100`}>
             <div className="flex flex-col gap-3 text-xl md:text-2xl lg:text-3xl">
