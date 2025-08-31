@@ -1,57 +1,72 @@
-🚀 Portfolio Website
+# 🚀 Portfolio Website  
 
-This is my personal Portfolio Website built with React, Vite, and Tailwind CSS.
-It showcases my skills, projects, achievements, and contact information in a clean and modern design.
-The project is deployed on Vercel.
+- Welcome to my **personal portfolio website** built with **React, Vite, and Tailwind CSS**.  
+- It showcases my **skills, projects, achievements, and contact information** — all wrapped in a **clean, modern, and responsive design**.  
+- The project is **deployed on Vercel** 🌐.  
 
-📂 Project Structure
+---
+## 🌐 Live Demo
+- 👉 Portfolio Website: https://portfolio-puce-kappa-34.vercel.app/
 
-Portfolio/
-│
-├── public/ # Static assets
-├── src/ # Source code
-│ ├── components/ # Reusable UI components
-│ ├── pages/ # Different sections/pages
-│ ├── App.jsx # Main app entry
-│ └── index.js # React DOM rendering
-│
-├── index.html # HTML entry point
-├── package.json # Project dependencies
-├── postcss.config.cjs # PostCSS configuration
-├── tailwind.config.cjs # Tailwind CSS configuration
-├── vite.config.js # Vite configuration
-└── README.md # Project documentation
+## 📂 Project Structure  
+### Portfolio/
+- │
+- ├── public/ # Static assets
+- │ ├── desktop_pc/ # Desktop assets
+- │ └── planet/ # Planet assets
+- │
+- ├── src/ # Source code
+- │ ├── assets/ # Images, icons, and media
+- │ ├── components/ # Reusable UI components
+- │ ├── constants/ # Constants and data
+- │ ├── hoc/ # Higher-order components
+- │ ├── utils/ # Utility functions
+- │ ├── App.jsx # Main app entry
+- │ ├── index.css # Global styles
+- │ ├── main.jsx # React DOM rendering
+- │ └── styles.js # Tailored styling
+- │
+- ├── index.html # HTML entry point
+- ├── package.json # Project dependencies
+- ├── postcss.config.cjs # PostCSS configuration
+- ├── tailwind.config.cjs # Tailwind CSS configuration
+- ├── vite.config.js # Vite configuration
+- └── README.md # Project documentation
 
-🛠️ Tech Stack
 
-Frontend Framework: React + Vite ⚡
+---
 
-Styling: Tailwind CSS 🎨
+## 🛠️ Tech Stack  
 
-Build Tool: Vite
+- ⚡ **Frontend Framework:** React + Vite  
+- 🎨 **Styling:** Tailwind CSS  
+- 🛠️ **Build Tool:** Vite  
+- 🌐 **Deployment:** Vercel  
 
-Deployment: Vercel 🌐
+---
 
-🚀 Getting Started
-1. Clone the repository
+## 🚀 Getting Started  
+### Follow these steps to run the project locally:  
+#### 1️⃣ **Clone the repository**  
+- git clone https://github.com/1dhruvtripathi/Portfolio.git
+- cd Portfolio 
 
-git clone https://github.com/1dhruvtripathi/Portfolio.git
+#### 2️⃣ Install dependencies
+- npm install
 
-cd Portfolio
 
-2. Install dependencies
+#### 3️⃣ Run the development server
+- npm run dev
 
-npm install
 
-3. Run the development server
+- Then open 👉 http://localhost:5173 in your browser.
 
-npm run dev
-Open http://localhost:5173 in your browser.
+#### 4️⃣ Build for production
+- npm run build
 
-4. Build for production
-
-npm run build
-
-🌐 Live Demo
-
-👉 Portfolio Website: https://portfolio-puce-kappa-34.vercel.app/
+## 💡 Features
+- 🎯 Modern, responsive design
+- 📱 Mobile-friendly UI
+- 🖥️ Clean component structure
+- ⚡ Super-fast build with Vite
+- 🌐 Deployed seamlessly on Vercel
