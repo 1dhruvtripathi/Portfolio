@@ -80,11 +80,15 @@ const Hero = () => {
               <div className="flex items-center gap-3">
                 <span className="text-white/90 font-medium">🧠 Learning Today's ML, Building Tomorrow's AI</span>
                 <span className="text-white/50 text-lg">|</span>
-                <span className="text-white/90 font-medium">💻 Coding with Precision,</span>
+                
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-white/90 font-medium"> Learning with Passion</span>
+                <span className="text-white/90 font-medium">💻 Coding with Precision, Learning with Passion</span>
+              
                 <span className="text-white/50 text-lg">|</span>
+                
+              </div>
+              <div className="flex items-center gap-3">
                 <span className="text-white/90 font-medium">🚀 Solving Real-World Problems</span>
                 
               </div>
