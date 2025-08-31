@@ -78,20 +78,8 @@ const Hero = () => {
           <div className={`${styles.heroSubText} mt-2 text-white-100`}>
             <div className="flex flex-col gap-3 text-xl md:text-2xl lg:text-3xl">
               <div className="flex items-center gap-3">
-                <span className="text-white/90 font-medium">🧠 Learning Today's ML, Building Tomorrow's AI</span>
-                <span className="text-white/50 text-lg">|</span>
-                
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-white/90 font-medium">💻 Coding with Precision, Learning with Passion</span>
-              
-                <span className="text-white/50 text-lg">|</span>
-                
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-white/90 font-medium">🚀 Solving Real-World Problems</span>
-                
-              </div>
+                <span className="text-white/90 font-medium">🧠 Learning Today's ML, Building Tomorrow's AI | 💻 Coding with Precision, Learning with Passion | 🚀 Solving Real-World Problems.</span>
+                </div>
               
             </div>
           </div>
